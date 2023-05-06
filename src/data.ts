@@ -1,4 +1,10 @@
 import Papa from 'papaparse';
+import getConfig from 'next/config';
+
+const { publicRuntimeConfig } = getConfig();
+const staticFolder = publicRuntimeConfig.staticFolder;
+
+
 
 export type DataItem = {
   'Asset Name': string;
@@ -11,7 +17,7 @@ export type DataItem = {
 };
 
 export async function loadData(): Promise<DataItem[]> {
-  const csvFilePath = '/data.csv';
+  const csvFilePath = `${staticFolder}/data.csv`;
 
   const response = await fetch(csvFilePath);
   const text = await response.text();
