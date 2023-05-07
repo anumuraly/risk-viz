@@ -73,7 +73,7 @@ const LineGraph: React.FC<Props> = ({ lat, long, assetName, businessCategory }) 
           },
           options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
             plugins: {
               tooltip: {
                 mode: 'index',
