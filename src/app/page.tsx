@@ -11,13 +11,13 @@ export default function Home() {
         <MapPage />
       </div>
       <div className="overflow-auto border border-black">
-        <h1 className='font-bold	text-lg text-center'>Line Chart</h1>
+        <h1 className='font-bold	text-lg text-center mt-8'>Line Chart</h1>
         <h3 className='font-bold'>
           Select Location, Asset, or Business Category to see Line Chart</h3>
         <LineGraphPage />
       </div>
       <div className="overflow-auto border border-black">
-      <h1 className='font-bold	text-lg text-center'>Data Table</h1>
+      <h1 className='font-bold	text-lg text-center mt-8'>Data Table</h1>
         <DataTablePage />
       </div>
     </main>
